@@ -99,6 +99,10 @@ public interface ExportadorListaProduto {
         switch (extensaoArquivoExportacao) {
             case "csv":
                 return new ExportadorListaProdutoCsv();
+            case "html":
+                return new ExportadorListaProdutoHtml();
+            case "md":
+                return new ExportadorListaProdutoMarkdown();
             default:
                 throw new UnsupportedOperationException(
                         "Formato de arquivo não suportado: " + extensaoArquivoExportacao);
