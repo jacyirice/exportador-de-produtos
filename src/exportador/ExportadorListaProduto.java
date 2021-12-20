@@ -83,7 +83,7 @@ public interface ExportadorListaProduto {
      * @return
      */
     static ExportadorListaProduto newInstance() {
-        return newInstance("csv");
+        return newInstance("html");
     }
 
     /**
